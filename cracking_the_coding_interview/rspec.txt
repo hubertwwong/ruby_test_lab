@@ -1,0 +1,7 @@
+.gets here hello
+.gets here felt
+end
+.
+
+Finished in 0.01621 seconds
+3 examples, 0 failures

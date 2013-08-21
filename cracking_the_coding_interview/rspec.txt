@@ -1,7 +1,24 @@
-.gets here hello
-.gets here felt
-end
-.
+...**insert first
+inserting bar
+traversing
+inserting baz
+traversing
+found insertion point
+> foo
+> bar
+> zzz
+> baz
+s> foo
+s> bar
+.....................
 
-Finished in 0.01621 seconds
-3 examples, 0 failures
+Pending:
+  SingleLinkedList single link list testing simple insert
+    # Temporarily disabled with xit
+    # ./spec/features/single_linked_list_spec.rb:32
+  SingleLinkedList single link list testing find
+    # Temporarily disabled with xit
+    # ./spec/features/single_linked_list_spec.rb:52
+
+Finished in 0.08182 seconds
+26 examples, 0 failures, 2 pending

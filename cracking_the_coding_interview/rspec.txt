@@ -2,15 +2,37 @@
 inserting bar
 traversing
 inserting baz
-traversing
-found insertion point
 > foo
 > bar
 > zzz
 > baz
 s> foo
 s> bar
-.....................
+......................pre
+4
+2
+1
+3
+6
+5
+7
+in
+1
+2
+3
+4
+5
+6
+7
+post
+1
+3
+2
+5
+7
+6
+4
+.
 
 Pending:
   SingleLinkedList single link list testing simple insert
@@ -20,5 +42,5 @@ Pending:
     # Temporarily disabled with xit
     # ./spec/features/single_linked_list_spec.rb:52
 
-Finished in 0.08182 seconds
-26 examples, 0 failures, 2 pending
+Finished in 0.10142 seconds
+28 examples, 0 failures, 2 pending

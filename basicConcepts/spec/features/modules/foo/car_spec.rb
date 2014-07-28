@@ -1,10 +1,10 @@
 require_relative '../../../../src/modules/foo/car'
 
-describe Foo::Car do
+describe Fluffy::Car do
   
   describe 'test' do
     it 'hello' do
-      Foo::Car.hello.should == "hello"
+      expect(Fluffy::Car.hello).to be == "hello"
     end
   end
   

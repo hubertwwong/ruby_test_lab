@@ -4,11 +4,11 @@ describe Toyota do
   
   describe 'test' do
     it 'hello' do
-      Toyota.hello.should == "hello"
+      expect(Toyota.hello).to be == "hello"
     end
     
     it 'speed bike' do
-      Toyota.speed.should == 5
+      expect(Toyota.speed).to be == 5
     end
   end
   

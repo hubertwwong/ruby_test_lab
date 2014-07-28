@@ -1,16 +1,16 @@
 class Toyota
-  
+
   # include a module.
-  include Foo
+  # note that the module name should be the directory name.
+  include Fluffy
 
   # this is how you call something from a module
   def self.hello
-    Foo::Car.hello
+    return Fluffy::Car.hello
   end
-  
+
   # calling a different module
   def self.speed
-    Foo::Bike.speed
+    return Fluffy::Bike.speed
   end
-  
 end

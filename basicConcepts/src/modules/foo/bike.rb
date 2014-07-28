@@ -1,6 +1,6 @@
 # a simple module with one hello method object.
 # 
-module Foo
+module Fluffy
   
   class Bike
     def self.hello

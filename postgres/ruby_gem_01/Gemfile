@@ -1,0 +1,11 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+# main gems.
+gem "pg"
+gem "sequel"
+
+# test gems
+gem "rspec"
+gem "guard"
+gem "guard-rspec"

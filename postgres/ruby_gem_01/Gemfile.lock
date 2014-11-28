@@ -7,7 +7,7 @@ GEM
     diff-lcs (1.2.5)
     ffi (1.9.6)
     formatador (0.2.5)
-    guard (2.8.2)
+    guard (2.9.0)
       formatador (>= 0.2.4)
       listen (~> 2.7)
       lumberjack (~> 1.0)
@@ -17,7 +17,7 @@ GEM
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
     hitimes (1.2.2)
-    listen (2.8.0)
+    listen (2.8.3)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -56,5 +56,6 @@ DEPENDENCIES
   guard
   guard-rspec
   pg
+  pry
   rspec
   sequel

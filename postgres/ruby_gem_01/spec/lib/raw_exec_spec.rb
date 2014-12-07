@@ -1,3 +1,5 @@
+require "pry"
+
 require_relative "../support/db"
 
 describe "raw_exec_spec" do
@@ -19,9 +21,16 @@ describe "raw_exec_spec" do
     items = db.client[:raw_exec] # Create a dataset
 
     # Populate the table
-    items.insert(name: 'abc')
+    items.insert(name: "abc")
+
+    # fetch item.
+    result = db.client.fetch("SELECT * FROM ?", :raw_exec)
 
     # item is 1
-    expect(items.count).to be == 1
+    expect(result.count).to be == 1
   end
+
+  # TODO come up with a list of queries you want to try out.
+  # 1. strings. how they are handle.
+  # 2. ???
 end

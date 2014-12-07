@@ -1,6 +1,6 @@
-require 'pry'
+require "pry"
 
-require_relative '../support/db'
+require_relative "../support/db"
 
 describe "basic_pg_spec" do
   let(:db) {
@@ -22,9 +22,9 @@ describe "basic_pg_spec" do
     items = db.client[:items] # Create a dataset
 
     # Populate the table
-    items.insert(name: 'abc', price: rand * 100)
-    items.insert(name: 'def', price: rand * 100)
-    items.insert(name: 'ghi', price: rand * 100)
+    items.insert(name: "abc", price: rand * 100)
+    items.insert(name: "def", price: rand * 100)
+    items.insert(name: "ghi", price: rand * 100)
 
     # Print out the number of records
     #puts "Item count: #{items.count}"

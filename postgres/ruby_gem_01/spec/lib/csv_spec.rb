@@ -25,7 +25,7 @@ describe "csv_spec" do
     return d
   }
 
-  it "csv insert" do
+  it "csv insert1" do
     @csv_insert = db.client[:csv_insert] # Create a dataset
 
     # read the csv.
@@ -34,6 +34,8 @@ describe "csv_spec" do
     quotes = []
     first_row = true
     CSV.foreach("spec/fixtures/GS.csv") do |row|
+      # an upgrade to this might to read the header file and use it
+      # probably don't need to do this.
       if first_row
         first_row=false
         next
@@ -51,4 +53,7 @@ describe "csv_spec" do
     expect(@csv_insert.count).to be > 10
     expect(@csv_insert.count).to be < 20
   end
+
+  # url tha contains some deets.
+  # http://www.sitepoint.com/guide-ruby-csv-library-part-2/
 end

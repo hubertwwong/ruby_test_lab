@@ -1,3 +1,4 @@
+require "logger"
 require "sequel"
 
 # dirty class to stash a sequel object.
@@ -12,6 +13,9 @@ class DB
     @client = Sequel.connect(adapter: 'postgres', host: 'localhost',
                              database: 'test_ruby_gem_01',
                              user: 'postgres', password: 'password')
+    # debug flag
+    @client.sql_log_level = :debug
+    @client.loggers << Logger.new("main.log")
   end
 
   #def create_table(table_name)
